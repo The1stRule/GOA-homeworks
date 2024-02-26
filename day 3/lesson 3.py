@@ -534,4 +534,15 @@ forward(200)
 
 end_fill()
 
+# we need a sun
+
+penup()
+goto(-600, 390)
+pendown()
+
+color("yellow")
+begin_fill()
+circle(150)
+end_fill()
+
 exitonclick()
