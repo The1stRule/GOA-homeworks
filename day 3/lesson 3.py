@@ -43,7 +43,7 @@ left(90)
 forward(120)
 end_fill()
 
-# door knob
+# we need a door knob
 
 color("black")
 penup()
