@@ -9,7 +9,7 @@ print("Write any example for this: ")
 num1 = int(input("please enter first number: "))
 num2 = int(input("please enter second number: "))
 
-print("bowl:", num1 + num2)
+print("sum: ", num1 + num2)
 
 
   # 3)
