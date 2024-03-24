@@ -1,0 +1,35 @@
+
+print(10 > 20)
+print(314 < 315)
+print(873 < 323)
+print(13 > 11)
+print(121 <= 3)
+print(323 >= 903)
+print(100 >= 100)
+print(745 <= 792)
+print(404 == 238)
+print(981 == 981)
+print(111 == 111)
+print(837 == 877)
+
+
+print(238 + 953)
+print(231 + 345)
+print(893 - 453)
+print(162 - 11)
+print(5 * 5)
+print(12 * 234)
+print(81 / 9)
+print(45 / 5)
+print(324 // 174)
+print(290 // 433)
+print(432 % 293)
+print(234 % 75)
+
+num1 = "5"
+print(num1)
+print(type(num1))
+
+new_num1 = int(num1)
+print(new_num1)
+print(type(new_num1))
