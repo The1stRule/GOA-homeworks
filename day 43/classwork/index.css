@@ -1,0 +1,45 @@
+
+
+
+/* inlain css-i iwereba html dokumentis gamxsnel tegshi style atributis gamoyenebit */
+/* is prioritetulia sxva tegebtan shedarebit, magram misi gamoyeneba ar aris rekomendirebuli, */
+/* radgan tu gvinda ramodenime tegi ertnairad gavstilot gviwevs yvela elements calke gavuwerot erti da igive cssis kodi */
+
+/* internal - css-i iwereba html dokumentsis <head> tegshi <style> tegis gamoyenebit */
+/* internali inlains jobia magram rodesac didi raodenobit kodis dasawerisas es gza ulamazos xdis chvens kods da gamodis "spageti" kodi */
+
+/* external css-i aris yvelaze kargi gza saitis gasastilad */
+/* calke uqmneba css-si dokumenti (mag: index.css) da html dokumentis <head> tegshi ukavshirdeba <link> tegis meshveobit */
+/* sadac iwereba rel atributi romelic miutitebs tu ra tipis dokuments vakavshirebt html-is dokumenttan da masshi iwereba "stylesheet" */
+/*  aseve <link> tegs gadaecema href atributi romelshic vutitebt im dokumentis misamarts romlis dakavshirebac gvinda html dokumenttan */
+body{
+    text-align: center;
+}
+h1{ 
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+form{
+    background-color: cyan;
+    font-size: large;
+    font-weight: 600;
+}
+input{
+    font-size: large;
+    background-color: white;
+}
+select{
+    font-size: large;
+}
+button{
+    font-size: x-large;
+    background-color: blue;
+    color: black;
+}
+#submit{
+    background-color: green;
+}
+#description{
+    font-size: xx-large;
+}

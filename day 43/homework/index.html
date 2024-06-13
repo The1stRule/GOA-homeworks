@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+            body{
+                text-align: center;
+                background-color: aqua;
+            }
+            form{
+                font-size: larger;
+            }
+            form input{
+                font-size: large;
+            }
+            button{
+                background-color: green;
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Registration</h2>
+        <form action="/day 43/homework/homework.html">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="Please enter your name">
+            <br>
+            <br>
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname" required placeholder="Please enter your surname">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Please enter your email">
+            <br>
+            <br>
+            <label for="tel_num">Tel:</label>
+            <input type="tel" name="tel_num" id="tel_num" required placeholder="Please enter your phone number">
+            <br>
+            <br>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" required placeholder="Please enter your password">
+            <br>
+            <br>
+            <label for="Country">Choose your country</label>
+            <select name="country" id="country">
+                <option value="GEO" selected>Georgia</option>
+                <option value="UKR">Ukraina</option>
+                <option value="TUR">Turkey</option>
+            </select>
+            <br>
+            <br>
+            <input type="checkbox" name="agree" id="checkbox" required>
+            <label for="checkbox">I agree with the terms and conditions that <u>don't exist</u></label>
+            <br>
+            <br>
+            <button>submit</button>
+        </form>
+    </body>
+</html>

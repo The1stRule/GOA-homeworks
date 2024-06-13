@@ -1,0 +1,9 @@
+body{
+    background-color: rgba(16, 18, 18, 0.438);
+}
+.width{
+    width: 500px;
+}
+#width{
+    width: 450px;
+}
