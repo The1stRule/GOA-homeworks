@@ -1,0 +1,128 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Times;
+}
+
+body {
+    height: 100vh;
+}
+
+.main-div {
+    width: 100%;
+    height: 550px;
+    display: flex;
+}
+
+.main-image {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 50%;
+    height: 100%;
+}
+
+#first-p {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+}
+
+span {
+    color: rgb(89, 228, 168);
+    /* color: rgb(147, 137, 215); */
+    font-weight: 400;
+}
+
+.main-p {
+    display: flex;
+
+    gap: 10px;
+}
+
+.main-p p {
+    padding: 0 10px 0 10px;
+    color: rgb(107, 107, 107);
+    font-size: 15px;
+}
+
+.main-p h1 {
+    color: black;
+    font-size: 1.7rem;
+}
+
+i {
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: rgb(229, 229, 229);
+    color: rgb(107, 107, 107);
+    transition: 0.25s;
+}
+
+i:hover {
+    transform: scale(107%);
+}
+
+.form-div form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-div input, button {
+    width: 350px;
+    height: 50px;
+    border-radius: 4px;
+    border: 2px solid rgba(107, 107, 107, 0.3);
+    transition: 0.25s;
+}
+
+/* active მინდა */
+input:hover {
+    border-color: rgb(89, 228, 168);
+    /* border-color: rgb(147, 137, 215); */
+}
+
+input:focus{
+    border-color: rgb(89, 228, 168);
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+button {
+    border-style: none;
+    color: white;
+    background-color: rgb(89, 228, 168);
+    /* background-color: rgb(107, 95, 255); */
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: scale(102%);
+}
+
+.form-p-h1-bt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border: 1px solid black;
+}
+
+input {
+    padding-left: 20px;
+}
