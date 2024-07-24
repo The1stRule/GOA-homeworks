@@ -1,0 +1,255 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Times;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(10, 102, 194);
+    transition: 0.35s;
+}
+
+#logo:hover {
+    transform: scale(102%);
+}
+
+#nav-icons {
+    display: flex;
+    gap: 40px;
+    margin-left: 11px;
+}
+
+#nav-p {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    font-size: 11px;
+    font-weight: 500;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(109, 109, 109);
+    padding: 0px 30px 0 250px;
+}
+
+#border-p {
+    border-left: 1px solid rgb(109, 109, 109);
+    border-right: 1px solid rgb(109, 109, 109);
+    padding: 0 35px 0px 34px;
+    margin-left: 11px;
+}
+
+.fa-laptop {
+    border-left: 1px solid rgb(109, 109, 109);
+    border-right: 1px solid rgb(109, 109, 109);
+    padding: 0px 50px 0px 50px;
+}
+
+#sign-up-in{
+    color: rgb(109, 109, 109);
+    font-weight: 500;
+}
+
+#sign-up-in button{
+    color: rgb(10, 102, 194);
+    font-size: 16px;
+    font-weight: 500;
+    width: 80px;
+    height: 30px;
+    border-radius: 25px;
+    border: 1px solid rgb(10, 102, 194);
+    background-color: white;
+}
+
+#sign-up-in {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+#main-p{
+    width: 350px;
+    color: rgb(190, 96, 69);
+    font-size: 2.2rem;
+    font-weight: 100;
+    line-height: 130%;
+    padding-bottom: 5px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 1px;
+    transition: 0.25s;
+}
+
+input:hover {
+    border-color: rgb(10, 102, 194);
+}
+input:focus {
+    outline: none;
+}
+
+form p {
+    color: rgb(10, 102, 194);
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+form button {
+    width: 300px;
+    height: 35px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: rgb(10, 102, 194);
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+button {
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: scale(102%);
+}
+
+#or {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.overline {
+    width: 135px;
+    height: 1px;
+    border: 1px solid rgb(109, 109, 109);
+}
+
+#or p {
+    font-size: 15px;
+    color: rgb(109, 109, 109);
+}
+
+#form-button-p {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+#nav-icons i {
+    transition: 0.25s;
+}
+
+#nav-icons i:hover {
+    transform: scale(105%);
+}
+
+#nav-p p {
+    transition: 0.25s;
+}
+
+#nav-p p:hover {
+    transform: scale(105%);
+}
+#info {
+    width: 350px;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(109, 109, 109);
+    padding-bottom: 15px;
+}
+
+.info-span {
+    color: rgb(10, 102, 194);
+}
+
+#buttons button {
+    width: 300px;
+    height: 35px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 30px;
+    background-color: white;
+    color: rgb(68, 68, 68);
+}
+
+#buttons i {
+    background-image: linear-gradient(142deg, rgb(247, 165, 36) 30%, rgb(67, 168, 118) 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 5px;
+}
+
+#buttons span {
+    color: rgb(10, 102, 194);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#tel-email {
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main {
+    padding-top: 50px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+#img-div {
+    width: 500px;
+    height: 450px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

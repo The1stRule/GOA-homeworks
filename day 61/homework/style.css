@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#main {
+    width: 500px;
+    height: 500px;
+    border: 5px solid red;
+    display: grid;
+    grid-template: 50% 50% / repeat(4, 25%)
+
+}
+
+.child {
+    background-color: green;
+    border: 2px solid blue;
+}
+
+#profile-1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#profile-3 {
+    grid-area: 1 / 4 / 3 / 5;
+}
+#profile-5 {
+    grid-area: 2 / 2 / 3 / 4;
+}
+

@@ -7,6 +7,9 @@
 
 body {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-div {
@@ -18,7 +21,6 @@ body {
 .main-image {
     width: 50%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
 }
@@ -28,7 +30,6 @@ img {
 }
 
 #first-p {
-    text-align: right;
     font-size: 1rem;
     font-weight: 400;
     color: rgb(80, 80, 80);
@@ -36,22 +37,32 @@ img {
 
 span {
     color: rgb(89, 228, 168);
-    /* color: rgb(147, 137, 215); */
     font-weight: 400;
 }
 
 .main-p {
     display: flex;
-
-    gap: 10px;
+    align-items: center;
+    gap: 11px;
 }
 
 .main-p p {
-    padding: 0 10px 0 10px;
     color: rgb(107, 107, 107);
     font-size: 15px;
 }
 
+.or-divs {
+    height: 1px;
+    width: 65px;
+    border: 1px solid rgb(107, 107, 107);;
+}
+
+#or-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .main-p h1 {
     color: black;
     font-size: 1.7rem;
@@ -84,15 +95,13 @@ i:hover {
     transition: 0.25s;
 }
 
-/* active მინდა */
 input:hover {
     border-color: rgb(89, 228, 168);
-    /* border-color: rgb(147, 137, 215); */
 }
 
-input:focus{
-    border-color: rgb(89, 228, 168);
-}
+input:focus {
+    outline: none;
+  }
 
 input::placeholder {
     font-size: 14px;
@@ -102,7 +111,6 @@ button {
     border-style: none;
     color: white;
     background-color: rgb(89, 228, 168);
-    /* background-color: rgb(107, 95, 255); */
     margin-top: 30px;
     font-size: 15px;
     font-weight: 500;
@@ -118,11 +126,16 @@ button:hover {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
-    border: 1px solid black;
 }
 
 input {
     padding-left: 20px;
+}
+
+#flex-first-p {
+    width: 72%;
+    display: flex;
+    justify-content: center;
 }
