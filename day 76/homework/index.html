@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="my-p">HTML</p>
+    <p>HTML</p>
+    <script>
+        // შექმენით HTML-ის დოკუმენტი და დაამატეთ 2 პარაგრაფი, პირველ პარაგრაფს მიანიჭეთ
+        //  უნიკალური id, შემდეგ კი გახსენით script element-ი და წამოიღეთ კონკრეტული ელემენტი id-ის
+        //  დახმარებით, შეცვალეთ წამოღებული ელემენტის ვიზუალური მხარე, მაგალითად შიგთავსი და ფერი
+
+        const p = document.getElementById("my-p");
+        p.textContent = "HTML CSS JavaScript";
+        p.style.padding = "5px 5px";
+        p.style.alignItems = "center";
+        p.style.fontWeight = "600";
+        p.style.width = "160px";
+        p.style.backgroundColor = "#f7df1e";
+        p.style.border = "1px solid black";
+        document.body.style.height = "100vh";
+        document.body.style.backgroundColor = "skyblue";
+        document.body.style.display = "flex";
+        document.body.style.flexDirection = "column";
+        document.body.style.alignItems = "center";
+        document.body.style.justifyContent = "center";
+        document.body.style.gap = "50px";
+    </script>
+</body>
+</html>

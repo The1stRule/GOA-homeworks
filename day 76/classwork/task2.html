@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>skfidk</p>
+    <script>
+        // წამოიღეთ დოკუმენტის ობიექტი და კომენტარებით ახსენით თუ როგორ
+        //  შეიქმნა ეს ობიექტი და რა არის ამ ობიექტში მოცემული
+        
+        console.dir(document);
+        // document ობიექტში ინახება საიტის შესახებ ყველანაირი ინფორმაცია დეტალურად, ასევე
+        //  ინახება ისეთი მონაცემები, როგორიცაა მომხმარებლის ლოკაცია, ბრაუზერი და ა.შ
+        
+        //  document ობიექტი საიტის გაშვების თანავე იქმნება და მას არ სჭირდება ხელით შექმნა
+
+        // ამ დოკუმენტის ობიექტის დახმარებით აირჩიეთ ერთ-ერთი ელემენტი, რომელიც
+        //  ჩანს ვებგვერდზე შემდეგ შეცვალეთ ტექსტის შიგთავსი
+        const p = document.body.children[0];
+        p.textContent = "Nika";
+        console.dir(p.textContent);
+    </script>
+</body>
+</html>
