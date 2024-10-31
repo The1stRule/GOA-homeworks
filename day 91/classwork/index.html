@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catalog</title>
+        <script src="https://kit.fontawesome.com/0042a04d70.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="catalog-header">
+            <p>Catalog</p>
+        </div>
+        <main>
+            <div id="flex-div">
+                <div class="child">
+                    <img src="./images/image1.jpg" alt="image1">
+                    <div class="h3-p">
+                        <h3>Lock and Love Women's Remo...</h3>
+                        <p>Category: women's clothing</p>
+                    </div>
+                    <p class="price-p">Price: 29.95$</p>
+                    <div class="buttons-div">
+                        <button><i class="fa-solid fa-heart"></i> Add to Wishlist</button>
+                        <button onclick="addCart(0)" class="btn"><i class="fa-solid fa-cart-shopping"> </i>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="child">
+                    <img src="./images/image2.jpg" alt="image2">
+                    <div class="h3-p">
+                        <h3>MBJ Women's Solid Short Sl...</h3>
+                        <p>Category: women's clothing</p>
+                    </div>
+                    <p class="price-p">Price: 9.85$</p>
+                    <div class="buttons-div">
+                        <button><i class="fa-solid fa-heart"></i> Add to Wishlist</button>
+                        <button onclick="addCart(1)" class="btn"><i class="fa-solid fa-cart-shopping"> </i>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="child">
+                    <img src="./images/image3.jpg" alt="image3">
+                    <div class="h3-p">
+                        <h3>Mens Casual Premium Slim F...</h3>
+                        <p>Category: men's clothing</p>
+                    </div>
+                    <p class="price-p">Price: 22.3$</p>
+                    <div class="buttons-div">
+                        <button><i class="fa-solid fa-heart"></i> Add to Wishlist</button>
+                        <button onclick="addCart(2)" class="btn"><i class="fa-solid fa-cart-shopping"> </i>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="child">
+                    <img src="./images/image4.jpg" alt="image4">
+                    <div class="h3-p">
+                        <h3>Mens Casual Slim Fit</h3>
+                        <p>Category: men's clothing</p>
+                    </div>
+                    <p class="price-p">Price: 15.99$</p>
+                    <div class="buttons-div">
+                        <button><i class="fa-solid fa-heart"></i> Add to Wishlist</button>
+                        <button onclick="addCart(3)" class="btn"><i class="fa-solid fa-cart-shopping"> </i>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="cart">
+                <div class="cart-p">
+                    <p>Your Cart</p>
+                    <p id="total-p">Total: </p>
+                </div>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
