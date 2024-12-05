@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding-top: 30px;
+    background-color: #f2f4f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+ul a:hover {
+    text-decoration: underline dotted;
+}
+
+main {
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.post {
+    width: 40%;
+    padding: 40px 0px 35px 0px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title-div {
+    width: 100%;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title-div div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.post p {
+    width: 90%;
+    font-size: 0.8rem;
+    line-height: 150%;
+}
+
+.reactions-div {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.reactions-div p {
+    width: fit-content;
+}
+
+#forms-div {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titleForm {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+#input-div {
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-div input {
+    height: 2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    width: 60px;
+    height: 2rem;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #181a1b;
+    color: white;
+    transition: 0.20s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    color: #181a1b;
+    border: 1px solid #181a1b;
+}
+
+span {
+    font-size: 0.8rem;
+}
+
+#tagsForm {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#tagsForm p {
+    font-weight: 600;
+}
+
+#tags-div {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.checkbox-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tagsForm button {
+    width: 50px;
+    height: 1.5rem;
+    font-size: 12px;
+}

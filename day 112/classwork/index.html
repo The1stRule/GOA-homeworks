@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Posts Rendering</title>
+        <script src="https://kit.fontawesome.com/0042a04d70.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Posts Rendering</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">News Feed</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="#">Autorisation</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="forms-div">
+            <form id="tagsForm">
+                <p>Search by tags</p>
+                <div id="tags-div">
+                    <div class="checkbox-div">
+                        <label for="history">history</label>
+                        <input type="checkbox" id="history" name="history" value="history">
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="classic">classic</label>
+                        <input type="checkbox" id="classic" name="classic" value="classic">
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="life">life</label>
+                        <input type="checkbox" id="life" name="life" value="life">
+                    </div>
+                    <div class="checkbox-div">
+                        <label for="american">american</label>
+                        <input type="checkbox" id="american" name="american" value="american">
+                    </div>
+                </div>
+                <button>Search</button>
+            </form>
+            <form id="titleForm">
+                <div id="input-div">
+                    <input type="text" name="postTag" placeholder="Search post" required />
+                    <span></span>
+                </div>
+                <button>Search</button>
+            </form>
+        </div>
+        <main>
+
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Database Search</title>
+        <link rel="stylesheet" href="./style1.css">
+    </head>
+    <body>
+        <main>
+            <form>
+                <div id="input-div">
+                    <input type="text" name="movieTitle" placeholder="Search movie" required />
+                    <span id="message"></span>
+                </div>
+                <button>Search</button>
+            </form>
+            <div id="movie-info">
+                <div id="section1" class="sections">
+                    <img src="./movie.png" alt="movie" class="t-element">
+                    <div>
+                        <h2 class="t-element">Title</h2>
+                        <p class="t-element">Year</p>
+                    </div>
+                </div>
+                <div id="section2" class="sections">
+                    <p class="t-element"><span>Plot:</span> text</p>
+                    <p class="t-element"><span>Rating:</span> text</p>
+                    <p class="t-element"><span>Language:</span> text</p>
+                </div>
+            </div>
+        </main>
+        <script src="./script1.js"></script>
+    </body>
+</html>
