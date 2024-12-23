@@ -48,7 +48,17 @@
 // - Create a style object and use it to apply inline styles to a `<div>` dynamically.
 // - Example: Change the `backgroundColor` based on a value from a predefined variable.
 
-// ---
+// const MyComponent = () => {
+//     const componentStyle = {
+//       width: "200px",
+//       height: "200px",
+//       backgroundColor: "lightblue",
+//     }
+  
+//     return <div style={componentStyle}></div>;
+// }
+  
+// export default MyComponent;
 
 // ### **5. Rendering JSX from a Function**
 // - Define a function that returns a JSX element.
