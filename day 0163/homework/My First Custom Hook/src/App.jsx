@@ -5,17 +5,18 @@
 // ცხრილში იქონიეთ ერთი ღილაკი delete რომელზეც დაკლიკების შემთხვევაში წაიშლება პროდუქტი,
 // პროდუქტები უნდ აინახებოდეს ყოველი განახლების შემდეგ ლოკალლურ ბაზაში
 
-import { useEffect, useState } from "react";
-import { getLocalStorage, setLocalStorage } from "./utils/localStorage.js";
+import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
+import { setLocalStorage } from "./utils/localStorage.js";
 import ProtectedRote from "./components/ProtectedRote.jsx";
 import Products from "./components/Products.jsx";
 import Register from "./components/Register.jsx";
 import Authorization from "./components/Authorization.jsx";
+import { useForm } from "./hooks/useForm.js";
 
 const App = () => {
-    const [users, setUsers] = useState(getLocalStorage("users") || []);
-    const [curUser, setCurUser] = useState(getLocalStorage("curUser") || {});
+    const [ _ , setUsers , setUsersForm] = useForm("users", []);
+    const [curUser, setCurUser, setCurUserForm] = useForm("curUser", {});
 
     useEffect(() => {
         if(Object.keys(curUser).length > 0) {
@@ -25,18 +26,17 @@ const App = () => {
                 return [...filteredUsers, curUser];
             })
         }
-    }, [curUser])
-
+    }, [curUser]);
     return (
         <main>
             <Routes>
                 <Route path="/" element={
-                    <ProtectedRote>
-                        <Products />
+                    <ProtectedRote curUser={curUser} >
+                        <Products curUser={curUser} setCurUserForm={setCurUserForm} setCurUser={setCurUser} />
                     </ProtectedRote>
                 } />
-                <Route path="/register" element={<Register />} />
-                <Route path="/authorization" element={<Authorization />} />
+                <Route path="/register" element={<Register setUsersForm={setUsersForm} />} />
+                <Route path="/authorization" element={<Authorization setCurUserForm={setCurUserForm} />} />
             </Routes>
         </main>
     );
