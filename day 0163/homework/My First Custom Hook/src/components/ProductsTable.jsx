@@ -1,4 +1,4 @@
-import { handleDelete } from "../utils/handlerFunctions.js";
+import Product from "./Product.jsx";
 
 const ProductsTable = ({ curUser, setCurUser }) => {
     return (
@@ -10,6 +10,7 @@ const ProductsTable = ({ curUser, setCurUser }) => {
                         <th>№</th>
                         <th>Title</th>
                         <th>Price</th>
+                        <th>Edit</th>
                         <th>Del</th>
                     </tr>
                 </thead>
@@ -17,12 +18,7 @@ const ProductsTable = ({ curUser, setCurUser }) => {
                     {
                         curUser.products.map((curValue, index) => {
                             return (
-                                <tr key={curValue.id}>
-                                    <td>{index + 1}</td>
-                                    <td>{curValue.title}</td>
-                                    <td>{curValue.price}</td>
-                                    <td><button onClick={() => handleDelete(setCurUser, curValue.id)}>Del</button></td>
-                                </tr>
+                                <Product key={curValue.id} index={index} curValue={curValue} setCurUser={setCurUser} />
                             );
                         })
                     }

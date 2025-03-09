@@ -5,15 +5,10 @@ import { useError } from "../hooks/useError.js";
 const Register = ({ setUsersForm }) => {
     const [isError, handleError] = useError();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setUsersForm(e.target, register, handleError);
-    }
-
     return (
         <div>
             <h1>Register</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={(e) => setUsersForm(e, register, handleError)}>
                 <input type="text" name="fullname" placeholder="Enter your fullname" required />
                 <input type="email" name="email" placeholder="Enter your email" required />
                 <input type="password" name="password" placeholder="Enter your password" required />

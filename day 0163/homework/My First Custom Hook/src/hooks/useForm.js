@@ -8,13 +8,14 @@ const useForm = (initialState, value) => {
 
     !getLocalStorage(data) && setLocalStorage(initialState, data);
 
-    const handleSubmit = (target, func, handleError) => {
+    const handleSubmit = (e, func, handleError) => {
+        e.preventDefault();
         const formData = {};
-        for(const [key, value] of new FormData(target).entries()) {
+        for(const [key, value] of new FormData(e.target).entries()) {
             formData[key] = value;
         }
 
-        func(target, formData, setData, navigate, handleError);
+        func(e.target, formData, setData, navigate, handleError);
     }
 
     return [data, setData, handleSubmit];

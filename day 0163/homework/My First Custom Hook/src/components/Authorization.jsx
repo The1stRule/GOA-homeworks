@@ -5,15 +5,10 @@ import { useError } from "../hooks/useError.js";
 const Authorization = ({ setCurUserForm }) => {
     const [isError, handleError] = useError();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setCurUserForm(e.target, authorization, handleError);
-    }
-
     return (
         <div>
             <h1>Authorization</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={(e) => setCurUserForm(e, authorization, handleError)}>
                 <input type="email" name="email" placeholder="Enter your email" required />
                 <input type="password" name="password" placeholder="Enter your password" required />
                 <button>Authorize</button>

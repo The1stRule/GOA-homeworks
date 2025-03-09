@@ -1,15 +1,10 @@
 import { addProduct } from "../utils/handlerFunctions.js";
 
 const AddProduct = ({ setCurUserForm }) => {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setCurUserForm(e.target, addProduct)
-    }
-
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e) => setCurUserForm(e, addProduct)}>
             <input type="text" name="title" placeholder="Enter product title" required />
-            <input type="text" name="price" placeholder="Enter product price" required />
+            <input type="number" name="price" placeholder="Enter product price" required />
             <button>Add</button>
         </form>
     );

@@ -33,7 +33,6 @@ const authorization = (target, formData, setData, navigate, handleError) => {
 const addProduct = (target, formData, setData) => {
     target.reset();
     setData(prev => {
-        console.log(prev);
         setLocalStorage("curUser", { ...prev, products: [...prev.products, { id: Date.now(), ...formData }] });
         return { ...prev, products: [...prev.products, { id: Date.now(), ...formData }] };
     })
@@ -47,4 +46,19 @@ const handleDelete = (setData, delId) => {
     })
 }
 
-export { register, authorization, addProduct, handleDelete };
+const changePrice = (setCurUser, productId, newPrice) => {
+    setCurUser(prev => {
+        const filteredProducts = prev.products.map(curValue => {
+            if(curValue.id === productId) {
+                return { ...curValue, price: newPrice }
+            }
+
+            return curValue;
+        });
+
+        setLocalStorage("curUser", { ...prev, products: filteredProducts });
+        return { ...prev, products: filteredProducts };
+    })
+}
+
+export { register, authorization, addProduct, handleDelete, changePrice };
