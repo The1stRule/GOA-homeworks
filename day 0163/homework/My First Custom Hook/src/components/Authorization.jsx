@@ -6,15 +6,21 @@ const Authorization = ({ setCurUserForm }) => {
     const [isError, handleError] = useError();
 
     return (
-        <div>
+        <div className="form-div">
             <h1>Authorization</h1>
             <form onSubmit={(e) => setCurUserForm(e, authorization, handleError)}>
-                <input type="email" name="email" placeholder="Enter your email" required />
-                <input type="password" name="password" placeholder="Enter your password" required />
+                <div className="input-div">
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required />
+                </div>
+                <div className="input-div">
+                    <label htmlFor="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required />
+                </div>
                 <button>Authorize</button>
                 <p>Don't have an account? <Link to="/register">Register</Link> </p>
             </form>
-            <p>{isError ? "User not found!" : ""}</p>
+            <p id="error-message">{isError ? "User not found!" : ""}</p>
         </div>
     );
 }
