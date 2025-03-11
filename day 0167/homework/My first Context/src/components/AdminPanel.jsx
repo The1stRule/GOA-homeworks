@@ -3,21 +3,22 @@ import { AuthContext } from "../context/AuthProvider.jsx";
 import UserCard from "./UserCard.jsx";
 
 const AdminPanel = () => {
-    const { users, curUser } = useContext(AuthContext);
+    const { users, setUsers, curUser, setCurUser } = useContext(AuthContext);
     return (
-        <div>
+        <div id="admin-panel">
             <h1>Admin Panel</h1>
+            <button onClick={() => setCurUser({})}>Log out</button>
+            <h2>Current User</h2>
             <div>
-                <h2>Current User</h2>
-                <UserCard userInfo={curUser} />
+                <UserCard userInfo={curUser} delButton={false} />
             </div>
             <hr />
+            <h2>All Users</h2>
             <div>
-                <h2>All Users</h2>
                 {
-                    users.map((curValue, index) => {
+                    users.filter(user => user.email !== curUser.email).map((curValue, index) => {
                         return (
-                            <UserCard key={index} userInfo={{ ...curValue }} />
+                            <UserCard key={index} userInfo={curValue} delButton={true} setUsers={setUsers} />
                         );
                     })
                 }

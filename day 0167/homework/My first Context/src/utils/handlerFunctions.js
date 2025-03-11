@@ -1,8 +1,10 @@
 import { getLocalSotrage, setLocalSotrage } from "./localStorage.js"
 
-const register = (target, formData, setData, navigate) => {
+const register = (target, formData, setData, navigate, handleError) => {
+    handleError(false);
     for(const user of getLocalSotrage("users")) {
         if(user.email === formData.email) {
+            handleError(true);
             return;
         }
     }
@@ -15,7 +17,8 @@ const register = (target, formData, setData, navigate) => {
     navigate("/authorization");
 }
 
-const authorization = (target, formData, setData, navigate) => {
+const authorization = (target, formData, setData, navigate, handleError) => {
+    handleError(false);
     for(const user of getLocalSotrage("users")) {
         if(user.email === formData.email && user.password === formData.password) {
             target.reset();
@@ -24,6 +27,15 @@ const authorization = (target, formData, setData, navigate) => {
             navigate("/");
         }
     }
+    handleError(true);
 }
 
-export { register, authorization };
+const handleDelete = (delEmail, setUsers) => {
+    setUsers(prev => {
+        const filteredUsers = prev.filter(curValue => curValue.email !== delEmail);
+        setLocalSotrage("users", filteredUsers);
+        return filteredUsers;
+    })
+}
+
+export { register, authorization, handleDelete };

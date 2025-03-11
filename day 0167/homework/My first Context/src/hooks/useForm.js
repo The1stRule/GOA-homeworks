@@ -1,5 +1,5 @@
 const useForm = () => {
-    const handleSubmit = (e, func, setData, navigate) => {
+    const handleSubmit = (e, func, setData, navigate, handleError) => {
         e.preventDefault();
         const formData = {};
 
@@ -7,7 +7,7 @@ const useForm = () => {
             formData[key] = value;
         }
 
-        func(e.target, formData, setData, navigate);
+        func(e.target, formData, setData, navigate, handleError);
     }
 
     return handleSubmit;
